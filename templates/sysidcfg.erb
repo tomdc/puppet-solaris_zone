@@ -1,0 +1,14 @@
+system_locale=en_US
+timezone=Europe/Brussels
+terminal=vt100
+security_policy=NONE
+root_password=yourpasswd
+timeserver=ntp.yourdomain.com
+name_service=DNS { domain_name=yourdomain name_server=nameserverip search=yourdomain }
+network_interface=PRIMARY {
+	hostname=<%= realhostname %>
+        ip_address=<%= zip %>
+        netmask=255.255.255.0
+        protocol_ipv6=no }
+service_profile=limited_net
+nfs4_domain=dynamic

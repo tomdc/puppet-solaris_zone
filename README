@@ -1,1 +1,14 @@
+README
 Manifest to install a Solaris zone with a specified ip, interface, name and zpool.
+In the node definition for the global zone:
+
+  include solaris_zone
+  solaris_zone::zone { "test":
+        zip => "192.168.0.2",
+        interface => "igb0"
+  }
+
+
+TODO
+- run puppet at least once when the zone is installed
+- ...
