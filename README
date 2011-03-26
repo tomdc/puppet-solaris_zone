@@ -1,5 +1,5 @@
 README
-Manifest to install a Solaris zone with a specified ip, interface, name and zpool.
+Module to install a Solaris zone with a specified ip, interface, name and zpool.
 In the node definition for the global zone:
 
   include solaris_zone
